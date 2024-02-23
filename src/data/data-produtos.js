@@ -1,35 +1,35 @@
-import espaguete from "../assets/img/espaguete.jpg";
-import lasanha from "../assets/img/lasanha.jpg";
-import ravioli from "../assets/img/ravioli.jpg";
-import capeletti from "../assets/img/capeletti.jpg";
-import nhoque from "../assets/img/nhoque.jpg";
-import bruschetta from "../assets/img/bruschetta.jpg";
-import carpaccio from "../assets/img/carpaccio.jpg";
-import paella from "../assets/img/paella.jpg";
-import ebiSpicy from "../assets/img/ebi-spicy.jpg";
-import aligot from "../assets/img/aligot.jpg";
-import fileMignon from "../assets/img/file-mignon.jpg";
-import picanha from "../assets/img/picanha.png";
-import bifeAncho from "../assets/img/bife-ancho.jpg";
-import tomahwankSteak from "../assets/img/tomahawk-steak.jpg";
-import primeRib from "../assets/img/prime-rib.jpg";
-import tiramisu from "../assets/img/tiramisu.jpg";
-import cheesecake from "../assets/img/cheesecake.jpg";
-import banoffee from "../assets/img/banoffee.png";
-import milFolhas from "../assets/img/mil-folhas.jpg";
-import pudim from "../assets/img/pudim.jpg";
-import cerveja from "../assets/img/cerveja.jpg";
-import refrigerante from "../assets/img/refrigerante.jpg";
-import suco from "../assets/img/suco.jpg";
-import whiskey from "../assets/img/whiskey.jpg";
-import agua from "../assets/img/agua.jpg";
-import saladaCeasar from "../assets/img/salada-ceasar.jpg";
-import saladaCaprese from "../assets/img/salada-caprese.jpg";
-import saladaWaldorf from "../assets/img/salada-waldorf.jpg";
-import saladaGrega from "../assets/img/salada-grega.jpg";
-import saladaNicoise from "../assets/img/salada-nicoise.jpg";
+import espaguete from "../../public/assets/img/espaguete.jpg";
+import lasanha from "../../public/assets/img/lasanha.jpg";
+import ravioli from "../../public/assets/img/ravioli.jpg";
+import capeletti from "../../public/assets/img/capeletti.jpg";
+import nhoque from "../../public/assets/img/nhoque.jpg";
+import bruschetta from "../../public/assets/img/bruschetta.jpg";
+import carpaccio from "../../public/assets/img/carpaccio.jpg";
+import paella from "../../public/assets/img/paella.jpg";
+import ebiSpicy from "../../public/assets/img/ebi-spicy.jpg";
+import aligot from "../../public/assets/img/aligot.jpg";
+import fileMignon from "../../public/assets/img/file-mignon.jpg";
+import picanha from "../../public/assets/img/picanha.png";
+import bifeAncho from "../../public/assets/img/bife-ancho.jpg";
+import tomahwankSteak from "../../public/assets/img/tomahawk-steak.jpg";
+import primeRib from "../../public/assets/img/prime-rib.jpg";
+import tiramisu from "../../public/assets/img/tiramisu.jpg";
+import cheesecake from "../../public/assets/img/cheesecake.jpg";
+import banoffee from "../../public/assets/img/banoffee.png";
+import milFolhas from "../../public/assets/img/mil-folhas.jpg";
+import pudim from "../../public/assets/img/pudim.jpg";
+import cerveja from "../../public/assets/img/cerveja.jpg";
+import refrigerante from "../../public/assets/img/refrigerante.jpg";
+import suco from "../../public/assets/img/suco.jpg";
+import whiskey from "../../public/assets/img/whiskey.jpg";
+import agua from "../../public/assets/img/agua.jpg";
+import saladaCeasar from "../../public/assets/img/salada-ceasar.jpg";
+import saladaCaprese from "../../public/assets/img/salada-caprese.jpg";
+import saladaWaldorf from "../../public/assets/img/salada-waldorf.jpg";
+import saladaGrega from "../../public/assets/img/salada-grega.jpg";
+import saladaNicoise from "../../public/assets/img/salada-nicoise.jpg";
 
-export const produtos = [
+export const produtosDados = [
   {
     id: 1,
     nome: "Espaguete",

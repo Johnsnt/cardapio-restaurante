@@ -1,4 +1,13 @@
 import Head from "next/head";
+import style from "../styles/Home.module.css";
+
+import categoriaDados from "../data/categoria-botoes.js";
+import { produtosDados } from "../data/data-produtos.js";
+
+import CategoriaBotao from "../components/Categorias/";
+import CampoDeBusca from "../components/CampoDeBusca/";
+import Card from "../components/Cards/";
+
 
 export default function Home() {
   return (
@@ -9,6 +18,41 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header>
+        <div className={`limitar-secao`}>
+          <h1>Restaurant</h1>
+          <p></p>
+        </div>
+      </header>
+      <main>
+        <section className={`${style.Container_elementos_de_busca} limitar-secao`}>
+          <div>
+            {categoriaDados.map((item) => (
+              <CategoriaBotao
+                key={item.id}
+                titulo={item.titulo}
+                imagem={item.imagem}
+              />
+            ))}
+          </div>
+          <div>
+            <CampoDeBusca />
+          </div>
+        </section>
+        <section className="Container_Cardapio limitar-secao">
+          <h3>Cardapio</h3>
+          <div> {
+            produtosDados.map((item) => (
+              <Card
+                imagem={item.imagem}
+                nome={item.nome}
+                categoria={item.categoria}
+                descricao={item.preco}
+              />
+            ))}
+          </div>
+        </section>
+      </main>
     </>
   );
 }
