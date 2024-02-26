@@ -1,3 +1,17 @@
-.Container_elementos_de_busca {
+.container_elementos_de_busca {
+    padding: 50px 20px 0 20px;
     background-color: chartreuse;
 }
+
+.container_cardapio {
+    padding: 0 20px 50px 20px;
+    background-color: gray;
+}
+
+.container_card{
+    padding: 20px;
+    display: flex;
+    flex-flow: wrap row;
+    gap: 40px;
+}
+

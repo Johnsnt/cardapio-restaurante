@@ -6,7 +6,7 @@ import lupa from '../../../public/assets/lupa.png';
 
 export default function CampoDeBusca() {
     return (
-        <div>
+        <div className={style.barra_busca}>
             <Image src={lupa} alt="" />
             <input
                 type="text"

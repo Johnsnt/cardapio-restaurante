@@ -1,0 +1,24 @@
+.barra_busca {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.barra_busca img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 14px;
+}
+
+.barra_busca input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 50px;
+}
+
+.barra_busca input[type="text"] {
+    padding-left: 35px;
+}

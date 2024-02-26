@@ -1,0 +1,32 @@
+.container_botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.botao {
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: white;
+
+    padding: 10px 0px;
+    border-radius: 0.35rem;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: goldenrod;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+}

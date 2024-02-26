@@ -1,0 +1,31 @@
+.card_box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #daa520;
+    flex-grow: 1;
+    width: 250px;
+    background-color: chocolate;
+}
+
+.container_descricao {
+    flex: 1 1 150px;
+    padding: 10px;
+}
+
+.container_descricao p {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container_img {
+    height: 250px;
+}
+
+.container_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
