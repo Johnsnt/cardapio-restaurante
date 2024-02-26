@@ -1,17 +1,54 @@
+.banner {
+    background-image: url('../../public/assets/banner.png');
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-position: center;
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner_titulo {
+    width: 50%;
+}
+
+.banner_titulo h1 {
+    letter-spacing: 5px;
+    font-size: 46px;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner_titulo p {
+    font-size: 32px;
+    font-family: 'Dancing Script', cursive;
+    color: #daa520;
+}
+
+
 .container_elementos_de_busca {
     padding: 50px 20px 0 20px;
-    background-color: chartreuse;
 }
 
 .container_cardapio {
     padding: 0 20px 50px 20px;
-    background-color: gray;
 }
 
-.container_card{
+.container_cardapio > h3 {
+text-align: center;
+    color: #daa520;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+.container_card {
     padding: 20px;
     display: flex;
     flex-flow: wrap row;
     gap: 40px;
+    background-color: #f3f3f3;
 }
-

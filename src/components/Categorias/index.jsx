@@ -11,28 +11,28 @@ import sobremesaIocn from "../../../public/assets/sobremesa.png";
 export default function CategoriaBotao({entradas, massas, carnes, bebidas, saladas, sobremesas}) {
     return (
         <div className={style.container_botao}>
-            <button className={style.botao}>
-                <Image className={style.img} onClick={() => entradas("Entradas")}  src={entradaIcon} alt="botão" />
+            <button className={style.botao} onClick={() => entradas()}>
+                <Image className={style.img} src={entradaIcon} alt="botão" />
                 <p>Entradas</p>
             </button>
-            <button className={style.botao} onClick={() => massas("Massas")}>
+            <button className={style.botao} onClick={() => massas()}>
                 <Image className={style.img} src={massaIcon} alt="botão" />
                 <p>Massas</p>
             </button>
-            <button className={style.botao}>
-                <Image className={style.img} onClick={() => carnes("Carnes")} src={carneIcon} alt="botão" />
+            <button className={style.botao} onClick={() => carnes()}>
+                <Image className={style.img} src={carneIcon} alt="botão" />
                 <p>Carnes</p>
             </button>
-            <button className={style.botao}>
-                <Image className={style.img} onClick={() => bebidas("Bebidas")} src={bebidasIcon} alt="botão" />
+            <button className={style.botao} onClick={() => bebidas()}>
+                <Image className={style.img} src={bebidasIcon} alt="botão" />
                 <p>Bebidas</p>
             </button>
-            <button className={style.botao}>
-                <Image className={style.img} onClick={() => saladas("Saladas")} src={saladaIcon} alt="botão" />
+            <button className={style.botao} onClick={() => saladas()}>
+                <Image className={style.img} src={saladaIcon} alt="botão" />
                 <p>Saladas</p>
             </button>
-            <button className={style.botao}>
-                <Image className={style.img} onClick={() => sobremesas("Sobremesas")} src={sobremesaIocn} alt="botão" />
+            <button className={style.botao} onClick={() => sobremesas()}>
+                <Image className={style.img} src={sobremesaIocn} alt="botão" />
                 <p>Sobremesas</p>
             </button>
         </div>

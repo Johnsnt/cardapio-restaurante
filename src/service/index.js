@@ -11,11 +11,11 @@ const filtrarItemsMenu = (categoria) => {
 
 const buscarItem = (textoDigitado) => {
     if (textoDigitado.length >= 3) {
-        return (produtosDados.filter
-            ((item) =>
-                item.nome.toLowerCase().includes(textoDigitado.toLowerCase())) ||
-            item.descricao.toLowerCase().includes(textoDigitado.toLowerCase())
-        );
+        return (
+            produtosDados.filter((item) =>
+            item.descricao.toLowerCase().replace(/\s/g, "").includes(textoDigitado.toLowerCase()) ||
+            item.nome.toLowerCase().replace(/\s/g, "").includes(textoDigitado.toLowerCase()))
+        )
     } else {
         return produtosDados;
     }

@@ -12,9 +12,16 @@ import Card from "../components/Cards/";
 export default function Home() {
 
   const [categoria, setCategoria] = useState(retornarListaProdutos());
+  const [textoDigitado, setTextoDigitado] = useState("");
 
   const handleFiltrarCategoria = (categoria) => {
     setCategoria(filtrarItemsMenu(categoria));
+    setTextoDigitado("")
+  };
+
+  const handleBuscarItem = (textoDigitado) => {
+    setTextoDigitado(textoDigitado);
+    setCategoria(buscarItem(textoDigitado));
   };
 
 
@@ -29,24 +36,27 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
-        <div className={`limitar-secao`}>
+      <header className={`${style.banner} limitar-secao`}>
+        <div className={`${style.banner_titulo} limitar-secao`}>
           <h1>Restaurant</h1>
-          <p></p>
+          <p>De pratos clássicos a criações surpreendentes, nosso cardápio é um requinte de sabores refinados</p>
         </div>
       </header>
       <main>
         <section className={`${style.container_elementos_de_busca} limitar-secao`}>
           <CategoriaBotao
-          entradas={() => handleFiltrarCategoria()}
-          massas={() => handleFiltrarCategoria()}
-          carnes={() => handleFiltrarCategoria()}
-          bebidas={() => handleFiltrarCategoria()}
-          saladas={() => handleFiltrarCategoria()}
-          sobremesas={() => handleFiltrarCategoria()}
+            entradas={() => handleFiltrarCategoria("Entradas")}
+            massas={() => handleFiltrarCategoria("Massas")}
+            carnes={() => handleFiltrarCategoria("Carnes")}
+            bebidas={() => handleFiltrarCategoria("Bebidas")}
+            saladas={() => handleFiltrarCategoria("Saladas")}
+            sobremesas={() => handleFiltrarCategoria("Sobremesas")}
           />
           <div>
-            <CampoDeBusca />
+            <CampoDeBusca 
+            textoDigitado={textoDigitado}
+            filtrarTextoDigitado={(event) => handleBuscarItem(event.target.value)}
+            />
           </div>
         </section>
         <section className={`${style.container_cardapio} limitar-secao`}>

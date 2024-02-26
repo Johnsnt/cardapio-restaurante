@@ -4,18 +4,33 @@
     border: 1px solid #daa520;
     flex-grow: 1;
     width: 250px;
-    background-color: chocolate;
+    background-color: #f3f3f3;
+}
+
+.preco {
+    font-weight: 600;
+    text-align: right;
 }
 
 .container_descricao {
     flex: 1 1 150px;
-    padding: 10px;
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.container_descricao h4 {
+    color: #daa520;
+    font-size: 14px;
 }
 
 .container_descricao p {
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+    text-align: left;
+    font-size: 15px;
     gap: 5px;
 }
 

@@ -13,8 +13,8 @@ const Card = ({ imagem, nome, categoria, descricao, preco }) => {
             <h4>{categoria}</h4>
             <p>{descricao}</p>
             </div>
-            <div>
-            <span>{preco}</span>
+            <div className={style.preco}>
+            <span>{new Intl.NumberFormat("pt-br", {style: "currency", currency: "BRL"}).format(preco)}</span>
             </div>
         </div>
     );
