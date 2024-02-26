@@ -4,6 +4,7 @@
     align-items: center;
     gap: 10px;
     padding: 10px 0;
+
 }
 
 .botao {
@@ -11,10 +12,9 @@
     flex-flow: wrap row;
     align-items: center;
     justify-content: center;
+    flex-grow: 1;
     gap: 10px;
-
     background-color: #f3f3f3;
-
     padding: 10px 0px;
     border-radius: 0.35rem;
     border: none;
@@ -23,10 +23,48 @@
 }
 
 .botao:hover {
-    background-color: goldenrod;
+    background-color: #daa520;
+}
+
+.botao p {
+    font-weight: 600;
 }
 
 .img {
     width: 20px;
     height: 20px;
+}
+
+/* Estados de botão aceso e apagado */
+.acenderBtn {
+    background-color: #daa520;
+}
+
+.apagarBtn {
+    background-color: #f3f3f3;
+}
+
+
+@media (max-width:768px) {
+    .container_botao {
+        flex-wrap: wrap;
+    }
+
+    .botao {
+        width: calc(100%/5);
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}
+
+@media (max-width:375px) {
+    .container_botao {
+        flex-direction: column;
+        height: 200px;
+    }
+
+    .botao {
+        width: 45%;
+        height: 40px;
+    }
 }

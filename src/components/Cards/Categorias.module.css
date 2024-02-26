@@ -1,37 +1,10 @@
 .card_box {
     display: flex;
     flex-direction: column;
-    border: 1px solid #daa520;
     flex-grow: 1;
     width: 250px;
+    border: 1px solid #daa520;
     background-color: #f3f3f3;
-}
-
-.preco {
-    font-weight: 600;
-    text-align: right;
-}
-
-.container_descricao {
-    flex: 1 1 150px;
-    padding: 10px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-
-.container_descricao h4 {
-    color: #daa520;
-    font-size: 14px;
-}
-
-.container_descricao p {
-    flex-grow: 1;
-    text-align: left;
-    font-size: 15px;
-    gap: 5px;
 }
 
 .container_img {
@@ -43,4 +16,31 @@
     height: 100%;
     object-fit: cover;
     border-radius: 3px;
+}
+
+.container_descricao {
+    flex: 1 1 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container_descricao h4 {
+    font-size: 14px;
+    color: #daa520;
+}
+
+.container_descricao p {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 15px;
+    gap: 5px; 
+}
+
+.container_preco {
+    text-align: right;
+    font-weight: 600;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }

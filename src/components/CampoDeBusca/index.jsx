@@ -4,7 +4,7 @@ import style from './CampoDeBusca.module.css';
 import lupa from '../../../public/assets/lupa.png';
 
 
-export default function CampoDeBusca({textoDigitado, filtrarTextoDigitado}) {
+export default function CampoDeBusca({ textoDigitado, filtrarTextoDigitado }) {
     return (
         <div className={style.barra_busca}>
             <Image src={lupa} alt="" />
