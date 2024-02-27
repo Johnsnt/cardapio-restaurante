@@ -58,6 +58,17 @@
     }
 }
 
+@media (max-width:421px) {
+    .banner_titulo {
+        width: 100%;
+    }
+    .banner_titulo p {
+        padding: 0 20px;
+        font-family: 'Dancing Script', cursive;
+        color: #daa520;
+    }
+}
+
 @media (max-width:375px) {
     .banner {
         background-size: cover;

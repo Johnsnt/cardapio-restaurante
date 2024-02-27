@@ -57,6 +57,12 @@
     }
 }
 
+@media (max-width:421px) {
+    .botao {
+        width: 44%;
+    }
+}
+
 @media (max-width:375px) {
     .container_botao {
         flex-direction: column;
