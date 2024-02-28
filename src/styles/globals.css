@@ -5,11 +5,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  overflow: hidden;
-}
-
-
 .limitar-secao {
   max-width: 1024px;
   margin: 0 auto;
